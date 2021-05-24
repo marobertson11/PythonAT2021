@@ -19,8 +19,10 @@ def is_year_leap(year):
         return False
 
 def days_in_month(year, month):
-    d30 = {30, [4, 6, 9, 11]}
-    d31 = {31, [1,2, 5, 7, 8, 10, 12]}
+    # Find out why a dict does not work here
+    breakpoint()
+    d30 = [4, 6, 9, 11]
+    d31 = [1, 3, 5, 7, 8, 10, 12]
 
     if month in d30:
         return 30
