@@ -6,6 +6,7 @@ blocks = int(input("Enter the number of blocks: "))
 # # Starting with a single required block prevents the "0" error. 
  blocks_needed = 1
 
+breakpoint()
  while blocks_needed <= blocks:
    height += 1
    blocks -= blocks_needed
