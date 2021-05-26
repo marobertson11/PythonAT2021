@@ -7,3 +7,5 @@ it involuntarily shouts to the console the following string:
 
 From Lab 3.1.1.10 
 '''
+flower = input("Please enter a plant: ")
+print(flower, "is the best plant ever!")
