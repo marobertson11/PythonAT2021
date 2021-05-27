@@ -1,24 +1,11 @@
-a = 1
-
 def is_prime(num):
-    b = num
-    if num == 2:
-        return True
-    while num%2==0:
-        num > 2
-        i <= num
-        return False
-
-    if num == ~a*~b:
-        return False
+   if num > 1:
+    for i in range (2, num//2):
+        if (num%i)==0:
+            return False
     else:
         return True
-    
-    
-#
-# Write your code here.
-#
-
+        
 for i in range(1, 20):
 	if is_prime(i + 1):
 			print(i + 1, end=" ")
