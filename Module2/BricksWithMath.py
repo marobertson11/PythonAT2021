@@ -1,4 +1,4 @@
-blocks = int(input("Enter the number of blocks: "))
+blocks = 777
 
 height = round((2 * blocks) ** 0.5)
 
