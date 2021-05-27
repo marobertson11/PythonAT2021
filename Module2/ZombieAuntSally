@@ -1,0 +1,10 @@
+#Solution to 2.6.1.10
+#Zombie Aunt Sally returns to feast on your brains
+
+x = float(input("Enter value for x: "))
+
+y = 1/(x+(1/(x+1/(x+1/x))))
+
+print("y =", y)
+
+#I'm Intermediate Mommy!
