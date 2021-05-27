@@ -1,4 +1,4 @@
-#Please submit some suggested code
+#Please submit some suggested code.
 '''
 Imagine that your computer program loves these plants. 
 Whenever it receives an input in the form of the word Spathiphyllum, 
