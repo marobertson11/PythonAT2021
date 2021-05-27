@@ -1,40 +1,32 @@
 def is_year_leap(year):
-    '''
-    Leap Years are any year that can be exactly divided by 4 (such as 2016, 2020, 2024, etc)
-    ^^^ If block 1
-
-    except if it can be exactly divided by 100, then it isn't (such as 2100, 2200, etc)
-    ^^^ If block 2
-
-    except if it can be exactly divided by 400, then it is (such as 2000, 2400)
-    ^^^ If block 3
-    '''
-    if year % 4 == 0: 
-        if year % 100 == 0:
-            if year % 400 == 0:
-                return True
-            return False
-        return True
-    else:
+    if(year % 4 != 0):
         return False
+    elif(year < 1582):
+        return False
+    elif(year % 100 != 0):
+        return True
+    elif(year % 400 != 0):
+        return False
+    else:
+        return True
 
 def days_in_month(year, month):
-    # Find out why a dict does not work here
-    breakpoint()
-    d30 = [4, 6, 9, 11]
-    d31 = [1, 3, 5, 7, 8, 10, 12]
-
-    if month in d30:
-        return 30
-    elif month in d31:
-        return 31
-    # this leap does not make sense
-    # TODO Verify logic is correct.
-    elif month == 2:
-        if is_year_leap(year):
-            return 29
+  leap=is_year_leap(year)
+    if month <= 7:
+        if month % 2 == 1:
+            return 31
+        elif month == 2:
+            if leap == True:
+                return 29
+            else:
+                return 28
+        else: 
+            return 30
+    else:
+        if month%2==0:
+            return 31
         else:
-            return 28
+            return 30
 
 
 test_years = [1900, 2000, 2016, 1987]
