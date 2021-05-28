@@ -41,7 +41,7 @@ def rps():
     global name
  
     # Game Loop for each game of Rock-Paper-Scissors
-    while True == 0:
+    while True:
  
         print("--------------------------------------")
         print("\t\tMenu")
@@ -108,7 +108,7 @@ def rpsls():
     global name
  
     # Game Loop for each game of Rock-Paper-Scissors-Lizard-Spock
-    while True == 0:
+    while True:
         print("--------------------------------------")
         print("\t\tMenu")
         print("--------------------------------------")
@@ -182,7 +182,7 @@ if __name__ == '__main__':
     name = input("Enter your name: ")
  
     # The GAME LOOP
-    while True == 0:
+    while True:
  
         # The Game Menu
         print()
