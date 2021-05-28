@@ -206,11 +206,11 @@ if __name__ == '__main__':
             rps()
  
         # Play the new version of the game
-        else choice == 2:
+        elif choice == 2:
             rpsls()
  
         # Quit the GAME LOOP    
-        else choice == 3:
+        elif choice == 3:
             break
  
         # Other wrong input
