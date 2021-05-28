@@ -2,7 +2,7 @@ import random
 import os
 import time
  
-def clear()
+def clear():
     os.system("clear")
  
 # Set of instructions for Rock-Paper-Scissors
