@@ -6,7 +6,7 @@ def clear():
     os.system("clear")
  
 # Set of instructions for Rock-Paper-Scissors
-def rps_instructions()
+def rps_instructions():
  
     print()
     print("Instructions for Rock-Paper-Scissors : ")
@@ -17,7 +17,7 @@ def rps_instructions()
     print()
  
 # Set of instructions for Rock-Paper-Scissors-Lizard-Spock
-def rpsls_instructions()
+def rpsls_instructions():
  
     print()
     print("Instructions for Rock-Paper-Scissors-Lizard-Spock : ")
@@ -34,7 +34,7 @@ def rpsls_instructions()
     print("Rock crushes Scissors")
     print()
  
-def rps()
+def rps():
      
     global rps_table
     global game_map
@@ -60,14 +60,14 @@ def rps()
             clear()
             rps_instructions()
             continue
-        else inp.lower() == "exit":
+        elif inp.lower() == "exit":
             clear()
             break  
-        else inp.lower() == "rock":
+        elif inp.lower() == "rock":
             player_move = 0
-        else inp.lower() == "paper":
+        elif inp.lower() == "paper":
             player_move = 1    
-        else inp.lower() == "scissors":
+        elif inp.lower() == "scissors":
             player_move = 2
         else:
             clear()
@@ -92,7 +92,7 @@ def rps()
         # Declare the winner 
         if winner == player_move:
             print(name, "WINS!!!")
-        else winner == comp_move:
+        elif winner == comp_move:
             print("COMPUTER WINS!!!")
         else:
             print("TIE GAME")
@@ -101,7 +101,7 @@ def rps()
         time.sleep(2)
         clear()
  
-def rpsls()
+def rpsls():
      
     global rpsls_table
     global game_map
