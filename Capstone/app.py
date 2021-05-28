@@ -126,18 +126,18 @@ def rpsls():
             clear()
             rpsls_instructions()
             continue
-        else inp.lower() == "exit":
+        elif inp.lower() == "exit":
             clear()
             break  
-        else inp.lower() == "rock":
+        elif inp.lower() == "rock":
             player_move = 0
-        else inp.lower() == "paper":
+        elif inp.lower() == "paper":
             player_move = 1    
-        else inp.lower() == "scissors":
+        elif inp.lower() == "scissors":
             player_move = 2
-        else inp.lower() == "lizard":
+        elif inp.lower() == "lizard":
             player_move = 3
-        else inp.lower() == "spock":
+        elif inp.lower() == "spock":
             player_move = 4
         else:
             clear()
